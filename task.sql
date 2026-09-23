@@ -1,5 +1,5 @@
-DROP PROCEDURE IF EXISTS get_warehouse_product_inventory;
 USE ShopDB; 
+DROP PROCEDURE IF EXISTS get_warehouse_product_inventory;
 
 -- Create your stored procedure here
 
