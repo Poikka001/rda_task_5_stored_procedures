@@ -1,11 +1,8 @@
-DROP DATABASE IF EXISTS ShopDB;
-CREATE DATABASE ShopDB;
-USE ShopDB; 
-
+USE ShopDB;
 DROP PROCEDURE IF EXISTS get_warehouse_product_inventory;
 
-DELIMITER //
 
+DELIMITER //
 CREATE PROCEDURE get_warehouse_product_inventory(
     IN warehouse_id INT
 )
@@ -17,5 +14,5 @@ BEGIN
     JOIN Products AS p ON pi.ProductID = p.ID
     WHERE pi.WarehouseID = warehouse_id;
 END //
-
 DELIMITER ;
+
